@@ -1,0 +1,258 @@
+
+/* HEADER */
+.rtd-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  display: flex;
+  border-top: solid #22a15d 2px;
+}
+
+.header-left {
+	display: flex;
+  	align-items: center;
+  	justify-content: flex-start;
+}
+
+.site-name-container {
+	width: 500px;
+	height: 100px;
+	display: flex;
+  	align-items: center;
+  	justify-content: flex-end;
+}
+
+.rtd-nav {
+	width: 500px;
+	display: flex;
+  	align-items: center;
+  	justify-content: flex-start;
+  	font-size: 20px;
+  	font-family: arial black ;
+}
+
+.rtd-logo-container {
+	width: 200px;
+	height: 100px;
+	object-fit: cover;
+}
+
+
+.rtd-logo {
+  	width: 200px;
+  	height: 100px;
+}
+
+.rtd-nav-element {
+  	cursor: pointer;
+  	padding: 10px 30px;
+}
+
+.site-name {
+	padding-right: 20px;
+	font-size: 50px;
+	font-weight: 900;
+	color: #1bcdfa;
+	text-shadow: -3px -3px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@media (min-width: 600px) {
+	.rtd-main-photo {
+	  	align-items: center;
+	  	background-image: url('https://gvwire.s3.us-west-1.amazonaws.com/wp-content/uploads/2021/08/24124441/Surfer.jpg');
+	  	background-position: center center;
+	  	background-size: cover;
+	  	display: flex;
+	  	justify-content: center;
+	  	height: 550px;
+	}
+	
+	.rtd-user-content {
+	  	color: #7da6e8;
+	  	position: absolute;
+	  	text-align: center;
+	  	width: 400px;
+	}
+
+	.rtd-user-sign {
+  		font-size: 16px;
+	}
+
+	.pick-your-poison {	
+		align-items: center;
+		border: solid black 5px;
+		height: 150px;
+		margin: 35px;
+		padding: 35px;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1%;
+	}
+
+	.picker-info-container {
+		align-items: center;
+		text-align: center;
+	}
+
+	.picker-info-button {
+		border: solid #7da6e8 2px;
+		padding: 10px;
+		width: 80%;
+		font-size: 20px;
+		margin-bottom: 20px;
+
+	}
+
+	.pick-a-length {
+		border: solid black 1px;
+
+	}
+
+	.pick-a-shape {
+		border: solid black 1px;
+	}
+
+	.pick-your-fins {
+		border: solid black 1px;
+	}
+}
+
+@media (max-width: 600px) {
+	.rtd-header{
+		flex-direction: column;
+		margin: 20px;
+	}
+	.header-left {
+		flex-direction: column;
+		align-items: center;	
+	}
+	
+	.rtd-nav {
+		flex-direction: column;
+		border: solid black 3px;
+	}
+	
+	.site-name-container {
+		visibility: hidden;
+	}
+	
+	.rtd-user-content {
+	  	visibility: hidden;
+	}
+
+	.pick-your-poison {	
+		margin: 50px;
+		align-items: center;
+		text-align: center;
+		grid-template-columns: 1fr;
+		gap: 5%;
+		background-color: #1bcdfa;
+		margin-top: 130px;
+
+	}
+	
+	.picker-info-container {
+		border: solid #22a15d 2px;
+	}
+
+	.picker-info-button {
+		border: solid #7da6e8 2px;
+		padding: 10px;
+		width: 80%;
+		font-size: 20px;
+		margin-bottom: 20px;
+
+	}
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.75);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal_window{
+  	background-color: white;
+  	border: solid #7da6e8 7px;
+  	padding: 20px;
+ 	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+
+.modal_text{
+  	max-width: 450px;
+  	padding: 15px;
+  	text-align: center;
+}
+
+.got-it-button {
+  	border: solid black 3px;
+  	Width: 250px;
+  	text-align: center;
+  	padding: 0 20px 0 20px;
+  	background-color: #7da6e8;
+  	color: white;
+  	font-size: 25px;
+}
+
+.modal-off {
+	visibility: hidden;
+}
+
+.rtd-design {
+	border: solid black 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #ebdbb7;
+	text-align: center;
+}
+
+.design-form-container {
+	align-items: center;
+	border: solid black 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #ebdbb7;
+	margin: 25px;
+	padding: 40px;
+}
+
+.select-length {
+	padding: 10px;
+}
+
+.select-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.shape-table-container  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid #22a15d 5px;
+	margin: 25px;
+}
+
+
+
+.selector-field {
+	width: 150px;
+}
+
+
+
+
